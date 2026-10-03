@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxtril — Luxury Salon & Grooming Experience | Coming Soon</title>
+  <meta name="description" content="Luxtril is revolutionizing luxury grooming, spa, and salon bookings. Experience world-class stylists and personalized beauty services at your fingertips. Coming soon to Android and iOS.">
+  <meta name="theme-color" content="#08080b">
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="Luxtril — Luxury Grooming & Salon Booking">
+  <meta property="og:description" content="Discover elevated salon appointments and bespoke styling. Coming soon.">
+  <meta property="og:image" content="assets/logo.svg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Ambient Particle Stars Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <div class="page-wrapper">
+    <!-- Header Navigation -->
+    <header class="header-nav">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="index.html" class="brand-link" id="brand-logo-link">
+          <img src="assets/logo.svg" alt="Luxtril Logo" class="brand-logo" width="44" height="44">
+          <span class="brand-name">Luxtril</span>
+        </a>
+
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="index.html" class="active" id="nav-home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="privacy-policy.html" id="nav-privacy">Privacy Policy</a>
+          </li>
+          <li class="nav-item">
+            <a href="#notify" class="btn-nav-action" id="nav-notify-btn">Get Notified</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Hero / Coming Soon Content -->
+    <main class="hero-section" id="hero-main">
+      <div class="hero-content">
+        
+        <!-- Animated Brand Emblem -->
+        <div class="emblem-wrapper">
+          <div class="emblem-ring-glow"></div>
+          <div class="emblem-ring-outer"></div>
+          <img src="assets/logo.svg" alt="Luxtril Gold Emblem" class="emblem-img">
+        </div>
+
+        <!-- Status Badge -->
+        <div class="status-badge">
+          <span class="badge-dot"></span>
+          <span>Launching Soon • Android &amp; iOS</span>
+        </div>
+
+        <!-- Hero Heading -->
+        <h1 class="hero-title">
+          The Future of Luxury Grooming is <br>
+          <span class="gold-text">Coming Soon</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Experience seamless VIP appointments with elite master stylists, premium salon parlors, and bespoke beauty treatments tailored exclusively for you.
+        </p>
+
+        <!-- Live Countdown Timer -->
+        <div class="countdown-container" aria-label="Launch Countdown">
+          <div class="timer-box">
+            <div class="timer-num" id="cd-days">00</div>
+            <div class="timer-label">Days</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="cd-hours">00</div>
+            <div class="timer-label">Hours</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="cd-mins">00</div>
+            <div class="timer-label">Minutes</div>
+          </div>
+          <div class="timer-box">
+            <div class="timer-num" id="cd-secs">00</div>
+            <div class="timer-label">Seconds</div>
+          </div>
+        </div>
+
+        <!-- Notify Me Card -->
+        <section class="notify-card" id="notify">
+          <h3>Get Early VIP Access</h3>
+          <p>Join our private waiting list to receive launch notifications and exclusive founding member perks.</p>
+          <form class="subscribe-form" id="notify-form">
+            <input 
+              type="email" 
+              class="input-field" 
+              placeholder="Enter your email address..." 
+              required
+              aria-label="Email for launch notification"
+              id="notify-email"
+            >
+            <button type="submit" class="btn-primary" id="btn-submit-notify">
+              <span>Notify Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </form>
+        </section>
+
+        <!-- Features Preview Grid -->
+        <section class="features-grid" aria-label="Luxtril Features Preview">
+          <div class="feature-item">
+            <div class="feature-icon">✨</div>
+            <h4>Elite Master Stylists</h4>
+            <p>Access top-tier certified barbers, hairstylists, and aesthetic specialists in your city.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📅</div>
+            <h4>Instant VIP Booking</h4>
+            <p>Zero wait time. Book bespoke appointments with dynamic real-time slot reservation.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🛡️</div>
+            <h4>Private &amp; Secure</h4>
+            <p>Complete data safety and encrypted transactions built strictly to Google Play compliance standards.</p>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Luxtril" class="footer-logo">
+          <span class="brand-name" style="font-size: 1.25rem;">Luxtril</span>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="privacy-policy.html#account-deletion">Account &amp; Data Deletion</a></li>
+          <li><a href="privacy-policy.html#contact-us">Contact Privacy Team</a></li>
+        </ul>
+
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year">2026</span> Luxtril Technologies. All rights reserved. Designed for Google Play &amp; Global Compliance.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#1c160c" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#0d0d10" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#050507" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Outer Gold Ring Gradient -->
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3B0"/>
+      <stop offset="25%" stop-color="#E2B755"/>
+      <stop offset="50%" stop-color="#8C6616"/>
+      <stop offset="75%" stop-color="#FCE182"/>
+      <stop offset="100%" stop-color="#C59B27"/>
+    </linearGradient>
+
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="goldMetallic" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF1BA"/>
+      <stop offset="35%" stop-color="#D4AF37"/>
+      <stop offset="70%" stop-color="#AA7C11"/>
+      <stop offset="100%" stop-color="#F7D070"/>
+    </linearGradient>
+
+    <!-- Inner Square Gradient -->
+    <linearGradient id="goldSquare" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3DC85"/>
+      <stop offset="50%" stop-color="#C59A26"/>
+      <stop offset="100%" stop-color="#8A6412"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Dark Circle -->
+  <circle cx="250" cy="250" r="236" fill="url(#bgGlow)"/>
+
+  <!-- Outer Glowing Gold Rings -->
+  <circle cx="250" cy="250" r="232" fill="none" stroke="url(#goldRing)" stroke-width="3.5" opacity="0.6" filter="url(#subtleGlow)"/>
+  <circle cx="250" cy="250" r="226" fill="none" stroke="url(#goldRing)" stroke-width="7" filter="url(#glow)"/>
+  <circle cx="250" cy="250" r="226" fill="none" stroke="#FFF7C2" stroke-width="2"/>
+  
+  <!-- Subtle Inner Border -->
+  <circle cx="250" cy="250" r="182" fill="none" stroke="url(#goldRing)" stroke-width="2" opacity="0.45"/>
+
+  <!-- Center Golden Square -->
+  <g transform="translate(190, 105)">
+    <rect x="0" y="0" width="120" height="120" rx="6" fill="url(#goldSquare)" stroke="#FFE899" stroke-width="1.5" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.6))"/>
+    
+    <!-- Stylized Scissors & Comb in Square (Black Silhouette) -->
+    <!-- Scissor Handle 1 & Blade -->
+    <path d="M 32 30 C 27 25 18 27 18 35 C 18 43 27 46 34 40 L 80 88 L 86 82 L 40 36 C 41 33 38 29 32 30 Z" fill="#0D0D10"/>
+    <circle cx="25" cy="35" r="5" fill="#C59A26"/>
+    
+    <!-- Scissor Blade 2 & Comb cross -->
+    <path d="M 88 32 L 32 88 L 38 94 L 94 38 Z" fill="#0D0D10"/>
+    
+    <!-- Comb Teeth & Spine -->
+    <path d="M 72 35 L 95 58 L 88 65 L 65 42 Z" fill="#0D0D10"/>
+    <line x1="74" y1="37" x2="80" y2="31" stroke="#0D0D10" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="79" y1="42" x2="85" y2="36" stroke="#0D0D10" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="84" y1="47" x2="90" y2="41" stroke="#0D0D10" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="89" y1="52" x2="95" y2="46" stroke="#0D0D10" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Luxtril Brand Typography -->
+  <g filter="url(#subtleGlow)">
+    <text x="250" y="325" 
+          font-family="'Playfair Display', 'Cinzel', 'Trajan Pro', Georgia, serif" 
+          font-size="68" 
+          font-weight="700" 
+          letter-spacing="2"
+          fill="url(#goldMetallic)" 
+          text-anchor="middle">
+      Luxtril
+    </text>
+  </g>
+
+  <!-- Sparkle Accents on Outer Ring -->
+  <circle cx="95" cy="140" r="3" fill="#FFFBE6" filter="url(#glow)"/>
+  <circle cx="405" cy="140" r="3" fill="#FFFBE6" filter="url(#glow)"/>
+  <circle cx="250" cy="476" r="3.5" fill="#FFFBE6" filter="url(#glow)"/>
+</svg>
